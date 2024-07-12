@@ -21,23 +21,27 @@
   <!-- Sign-up form start -->
 <div class="container">
   <form action="" id="form" novalidate>
-      <picture class="theSvg">
-        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width:375px)">
-      </picture>
-  
-    <div class="belowSvg">
-      <div class="textPortion">
-        <h1 class="heading">Stay updated!</h1>
-        <p class="numberofManagers">Join 60,000+ product managers receiving monthly updates on:</p>
-        <p class="update">Product discovery and building what matters</p>
-        <p class="update">Measuring to ensure updates are a success</p>
-        <p class="update">And much more!</p>
+      <div class="textandSvgone">
+        <picture class="theSvg">
+          <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width:37.5rem)">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        </picture>
+          
+            <div class="text">
+        <div class="belowSvg">
+          <div class="textPortion">
+            <h1 class="heading">Stay updated!</h1>
+            <p class="numberofManagers">Join 60,000+ product managers receiving monthly updates on:</p>
+            <p class="update">Product discovery and building what matters</p>
+            <p class="update">Measuring to ensure updates are a success</p>
+            <p class="update">And much more!</p>
+          </div>
+          <div class="inputandsubmition">
+            <label for="email">Email address <span class="errormessage hidden">Valid email Required</span></label>
+            <input type="text" name="user-email" id="email" placeholder="email@company.com" required>
+            <button>Subscribe to monthly newsletter</button>
       </div>
-      <div class="inputandsubmition">
-        <label for="email">Email address <span class="errormessage hidden">Valid email Required</span></label>
-        <input type="text" name="user-email" id="email" placeholder="email@company.com" required>
-        <button>Subscribe to monthly newsletter</button>
+    </div>
       </div>
     </div>
   </form>

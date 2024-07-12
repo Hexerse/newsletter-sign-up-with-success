@@ -63,6 +63,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: var(--ff);
+    height: 100vh;
 }
 
 .container{
@@ -72,7 +73,7 @@ body{
 }
 
 .theSvg{
-  min-width: 375px;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
@@ -91,7 +92,6 @@ body{
 
 .textPortion p{
   color: var(--clr-darkslategray);
-  font-weight: var(--fw-regular);
 }
 
 .update{
@@ -136,6 +136,7 @@ body{
 label{
   display: flex;
 }
+
 .errormessage{
   color: var(--clr-primary-tomato);
   margin-left: auto;
@@ -168,11 +169,6 @@ button:hover{
   margin-right: auto;
 }
 
-.textandSvg{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .ThanksHeader{
   font-weight: var(--fw-bold);
   color: var(--clr-darkslategray);
@@ -181,6 +177,13 @@ button:hover{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+
+.textandSvg{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 
 .confirmationEmail{
   color: var(--clr-darkslategray);
@@ -213,6 +216,80 @@ button:hover{
   display: none;
 }
 
-@media (min-width: 23.4375rem) {
+@media (min-width: 37.5rem) {
+  body{
+    background-color: var(--clr-darkslategray);
+  }
+
+  .container{
+    display: flex;
+    background-color: white;
+    width: 60rem;
+    height: 40rem;
+    border-radius: 2rem;
+  }
+
+  form{
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+
+  .theSvg{
+    margin: 0;
+    width: auto;
+  }
+
+  .heading{
+    font-size: 3rem;
+  }
+
+  .update{
+    color: var(--clr-darkslategray);
+    font-weight: 450;
+  }
+
+  button:hover{
+    background-image: linear-gradient(to right, hsla(345, 51%, 48%, 1.2), hsla(24, 89%, 45%, 1));
+    box-shadow: 5.1px 10.2px 10.2px hsl(0deg 0% 0% / 0.34);
+  }
+
+  /* SuccessPage */
+
+  .successContainer{
+    display: flex;
+    background-color: white;
+    width: 30rem;
+    min-height: 30rem;
+    border-radius: 2rem;
+  }
+
+  .dismissButton{
+    width: 80%;
+    margin-top: 0;
+  }
+  .successSvg{
+    margin-right: auto;
+  }
+
+  .textandSvgone{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
+  .textandSvg{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+
 }
